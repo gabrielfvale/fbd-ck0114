@@ -3,7 +3,7 @@ class Dependency:
   beta = {}
 
   '''
-  alpha ⟶ beta
+  α⟶β
   '''
   def __init__(self, a: set, b: set):
     self.alpha = a
@@ -12,7 +12,7 @@ class Dependency:
   '''
   Igualdade de tuplas t1[a] = t2[a]
   '''
-  def __eq__(self, dep: Dependency):
+  def __eq__(self, dep):
     if self.alpha == dep.alpha and self.beta == dep.beta:
       return True
     else:
@@ -22,4 +22,4 @@ class Dependency:
   Print formatado
   '''
   def __str__(self):
-    return "{}⟶{}".format(str(self.alpha), str(self.beta))
+    return "{}⟶ {}".format(str(self.alpha), str(self.beta))

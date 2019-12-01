@@ -46,7 +46,7 @@ class Rules:
   def decomposition(self, fd: Dependency, beta: set, gamma: set):
     if fd.beta == beta.union(gamma):
       # Dependencia (α, β) e (α, γ)
-      return {Dependency(fd.alpha, beta), Dependency(fd.alpha, gamma)}
+      return [Dependency(fd.alpha, beta), Dependency(fd.alpha, gamma)]
 
   '''
   Se α⟶β e γβ⟶ω, então αγ⟶ω
