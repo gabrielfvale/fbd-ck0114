@@ -1,0 +1,12 @@
+DELETE FROM album
+DELETE FROM compoe
+DELETE FROM composicao
+DELETE FROM compositor
+DELETE FROM faixa
+DELETE FROM faixa_pertence_playlist
+DELETE FROM gravadora
+DELETE FROM interpreta
+DELETE FROM interprete
+DELETE FROM periodo_musical
+DELETE FROM playlist
+DELETE FROM telefones_gravadora
